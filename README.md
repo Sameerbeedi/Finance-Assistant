@@ -22,7 +22,7 @@ The frontend is built using Streamlit and provides an intuitive interface for us
 
 Make sure the following are installed:
 
-- Python 3.8+
+- Python 3.10
 - `pip` (Python package manager)
 - `ffmpeg` (required for Whisper STT)
 

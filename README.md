@@ -3,6 +3,10 @@
 **Finance Assistant** is a smart tool designed to provide financial market insights by converting audio briefs into written summaries, scraping relevant data, and offering an interactive UI for users. It uses **FastAPI** for backend services and **Streamlit** for the frontend interface.
 
 ---
+## 🖥️ Frontend Overview
+The frontend is built using Streamlit and provides an intuitive interface for users to interact with the application.Here is how it looks:
+<img alt="Frontend Screenshot" src="Screenshot 2025-05-12 161730.png">
+
 
 ## 🚀 Features
 
@@ -47,6 +51,9 @@ Make sure the following are installed:
     sudo apt install ffmpeg
     ```
 
+---
+
+
 ## ▶️Usage
 ### 1. **Start the FastAPI Backend**
 Run the server to handle audio processing and summaries:
@@ -64,7 +71,8 @@ Start the frontend(replace the api endpoint) to upload files and view results:
 ```bash
     streamlit run app/app.py
 ```
-## 📁 Project Structure 
+## 📁 Project Structure
+``` 
 finance-assistant/
 │
 ├── app/                     # Streamlit frontend
@@ -79,6 +87,7 @@ finance-assistant/
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Project documentation
 └── input.wav                # Example audio file (optional)
+```
 
 
 

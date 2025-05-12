@@ -71,23 +71,46 @@ Start the frontend(replace the api endpoint) to upload files and view results:
 ```bash
     streamlit run app/app.py
 ```
-## 📁 Project Structure
-``` 
-finance-assistant/
-│
-├── app/                     # Streamlit frontend
-│   └── app.py
-│
-├── data_ingestion/          # Data scraping and ingestion scripts
-│   └── filings_scraper.py
-│
-├── orchestrator/            # FastAPI backend
-│   └── orchestrator.py
-│
-├── requirements.txt         # Python dependencies
-├── README.md                # Project documentation
-└── input.wav                # Example audio file (optional)
+---
+
+
+##  Project Architecture
 ```
+                    +--------------------------+
+                    |      User Interface      |
+                    |      (Streamlit App)     |
+                    +-----------+--------------+
+                                |
+                                v
+                    +-----------+--------------+
+                    |      FastAPI Backend     |
+                    |  (orchestrator.py API)   |
+                    +-----------+--------------+
+                                |
+                +---------------+----------------+
+                |                                |
+                v                                v
+     +--------------------+          +------------------------+
+     |   Whisper STT      |          |   Data Ingestion       |
+     |  (Audio to Text)   |          |  (filings_scraper.py)  |
+     +--------------------+          +------------------------+
+                |                                |
+                +---------------+----------------+
+                                v
+                    +--------------------------+
+                    |   Summary Generation /   |
+                    |   Financial Data Output  |
+                    +--------------------------+
+                                |
+                                v
+                    +--------------------------+
+                    |     Streamlit Frontend   |
+                    |  (Shows summary & data)  |
+                    +--------------------------+
+
+
+```
+
 
 
 

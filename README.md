@@ -56,7 +56,7 @@ Make sure the following are installed:
 
 ## ▶️Usage
 ### 1. **Start the FastAPI Backend**
-Run the server to handle audio processing and summaries:
+Run the server to handle audio processing and summaries(ran on wsl):
 ```bash
     uvicorn orchestrator.orchestrator:app --reload
 ```

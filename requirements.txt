@@ -1,0 +1,38 @@
+# LLM & Agents
+openai
+langchain
+langgraph
+crewai
+faiss-cpu
+tiktoken
+
+# Web Scraping & Data APIs
+yfinance
+beautifulsoup4
+requests
+lxml
+
+# FastAPI Microservices
+fastapi
+uvicorn
+python-multipart  # Added for file uploads
+
+# Streamlit UI
+streamlit
+
+# Whisper STT (you need ffmpeg installed on system)
+openai-whisper
+
+# Text-to-Speech
+pyttsx3
+# OR coqui-tts for more advanced models
+# TTS
+
+# Embedding & Vector Stores
+sentence-transformers
+
+# Utilities
+pydantic
+python-dotenv
+numpy
+pandas

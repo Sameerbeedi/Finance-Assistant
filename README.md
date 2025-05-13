@@ -1,6 +1,6 @@
 # 📊 Finance Assistant
 
-**Finance Assistant** is a smart tool designed to provide financial market insights by converting audio briefs into written summaries, scraping relevant data, and offering an interactive UI for users. It uses **FastAPI** for backend services and **Streamlit** for the frontend interface.
+**VoxCast** is a smart tool designed to provide financial market insights by converting audio briefs into written summaries, scraping relevant data, and offering an interactive UI for users. It uses **FastAPI** for backend services and **Streamlit** for the frontend interface.
 
 ---
 ## 🖥️ Frontend Overview
